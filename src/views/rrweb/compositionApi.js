@@ -1,6 +1,6 @@
 import * as rrweb from 'rrweb';
 import {ref} from 'vue'
-import http from '../api/index'
+import http from '../../api/index'
 
 let events = ref([]);
 let stop = null;

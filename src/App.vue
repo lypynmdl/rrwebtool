@@ -1,26 +1,41 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<el-container>
+  <el-header class="header flex">
+    <header-self></header-self>
+  </el-header>
+  <el-container>
+    <el-aside class="aside" width="250px">侧边导航</el-aside>
+    <el-main class="main">
+       <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+        <router-view></router-view>
+    </el-main>
+  </el-container>
+  <el-footer class="footer">底部</el-footer>
+</el-container>
+ 
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import HeaderSelf from '@/components/header'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    'header-self': HeaderSelf
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss" scoped>
+.header{
+  background-color: #909399;
+}
+.aside{
+  background-color: #409EFF;
+}
+.main{
+  background-color: #67C23A;
+}
+.footer{
+  background-color: #E6A23C;
 }
 </style>
