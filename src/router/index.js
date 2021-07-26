@@ -1,7 +1,7 @@
 import {createRouter, createWebHashHistory} from 'vue-router'
 
 const routes = [{
-  path: '',
+  path: '/',
   redirect: '/homePage'
 },{
   path: '/homePage',
