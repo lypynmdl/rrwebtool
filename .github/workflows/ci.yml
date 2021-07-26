@@ -1,7 +1,8 @@
 name: rrweb
 on: 
   push: 
-    branches: develop
+    branches: 
+      - develop
 jobs:
   build:
     name: rrweb-docker-ci
