@@ -15,7 +15,9 @@ import {
   ElCol,
   ElRow,
   ElInput,
-  ElTooltip
+  ElTooltip,
+  ElTabs,
+  ElTabPane
 } from 'element-plus';
 const components = [
   ElContainer,
@@ -34,7 +36,9 @@ const components = [
   ElRow,
   ElInput,
   ElButton,
-  ElTooltip
+  ElTooltip,
+  ElTabs,
+  ElTabPane
 ];
 export default function(app) {
   components.forEach(component => {

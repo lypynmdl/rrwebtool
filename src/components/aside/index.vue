@@ -6,11 +6,11 @@
       background-color="rgb(238, 241, 246)"
       active-text-color="#2395f1"
     >
-      <el-submenu v-for="(menu, outerIndex) in menus.filter(menu => menu.visible)" :key="outerIndex" :index="outerIndex">
+      <el-submenu v-for="menu in menus.filter(menu => menu.visible)" :key="menu.id" :index="menu.id">
         <template #title><i :class="menu.icon" />{{ menu.title }}</template>
         <el-menu-item-group>
           <!-- <template #title>分组一</template> -->
-          <el-menu-item v-for="(item, innerIndex) in menu.children.filter(item => item.visible)" :key="innerIndex" :index="`${outerIndex}-${innerIndex}`" @click="goPage(item)">{{ item.title }}</el-menu-item>
+          <el-menu-item v-for="item in menu.children.filter(item => item.visible)" :key="item.id" :index="item.id" @click="goPage(item)">{{ item.title }}</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
     </el-menu>
@@ -29,16 +29,16 @@ export default defineComponent({
     const goPage = (path) => {
       router.push(path);
     };
-    const setAsideStyle = () => {
-      const { clientHeight } = document.body;
-      const aside = document.querySelector('.aside');
-      if (aside) {
-        aside.style.height = `${clientHeight - 60 * 2}px`;
-      }
-    };
+    // const setAsideStyle = () => {
+    //   const { clientHeight } = document.body;
+    //   const aside = document.querySelector('.aside');
+    //   if (aside) {
+    //     aside.style.height = `${clientHeight - 60 * 2}px`;
+    //   }
+    // };
 
     onMounted(() => {
-      setAsideStyle();
+      // setAsideStyle();
     });
     return {
       menus,

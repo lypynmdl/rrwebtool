@@ -1,5 +1,5 @@
 <template>
-  <el-container>
+  <el-container class="app-main">
     <header-self />
     <el-container class="container">
       <aside-self />
@@ -30,8 +30,14 @@ body, html {
   padding: 0;
   height: 100%;
 }
+#app{
+  height: 100%
+}
 </style>
 <style lang="scss" scoped>
+.app-main{
+  height: 100%;
+}
 .main{
   width: calc(100% - 250px);
   font-size: 20px;
@@ -40,6 +46,7 @@ body, html {
 }
 .container{
   margin-top: 60px;
+  margin-bottom: 60px;
 }
 .footer{
   position: fixed;

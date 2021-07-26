@@ -16,7 +16,8 @@ const showTip = (text, time = 6000) => {
     'background-color': '#edf2fc',
     'box-shadow': '1px 1px 1px #EBEEF5',
     transition: 'opacity 2s linear',
-    opacity: 1
+    opacity: 1,
+    'z-index': '9999'
   };
   const spanStyle = {
     color: '#909399',
@@ -142,4 +143,5 @@ const copy = (data) => {
   }
   document.body.removeChild(input);
 };
+
 export { rePlay, record, upload, getList, remove, showTip, startSearch, copy };
