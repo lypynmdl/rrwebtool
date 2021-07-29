@@ -23,11 +23,22 @@ export default [
     }]
   }, {
     id: '3',
+    title: '组件',
+    icon: 'el-icon-upload',
+    visible: true,
+    children: [{
+      id: '3-1',
+      title: '上传组件包',
+      visible: true,
+      path: '/uploadPackage'
+    }]
+  }, {
+    id: '4',
     title: '反馈',
     icon: 'el-icon-chat-dot-round',
     visible: true,
     children: [{
-      id: '3-1',
+      id: '4-1',
       title: '反馈建议',
       visible: true,
       path: '/fallBack'
