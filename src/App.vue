@@ -5,6 +5,17 @@
       <aside-self />
       <el-main class="main">
         <router-view />
+        <!-- https://next.router.vuejs.org/zh/api/index.html#router-view-%E7%9A%84-v-slot -->
+        <!-- <router-view v-slot="{ Component, route }">
+          <transition :name="route.meta.transition || 'fade'" mode="out-in">
+            <keep-alive>
+              <component
+                :is="Component"
+                :key="route.meta.usePathKey ? route.path : undefined"
+              />
+            </keep-alive>
+          </transition>
+        </router-view> -->
       </el-main>
     </el-container>
     <el-footer class="footer">欢迎来到自助管理系统！</el-footer>

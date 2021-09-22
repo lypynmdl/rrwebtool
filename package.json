@@ -6,7 +6,8 @@
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "nodemon server/index"
+    "start": "nodemon server/index",
+    "start:db": "json-server --port 4000 --watch src/mock/db.json"
   },
   "dependencies": {
     "axios": "^0.21.1",
