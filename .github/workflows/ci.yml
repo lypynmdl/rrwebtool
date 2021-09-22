@@ -30,6 +30,3 @@ jobs:
         with:
           branch: develop # The branch the action should deploy to.
           folder: dist # The folder the action should deploy.
-          ssh-key: ${{ secrets.ACCESS_TOKEN }}
-        env: 
-            ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
