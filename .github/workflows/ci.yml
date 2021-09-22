@@ -28,5 +28,5 @@ jobs:
       - name: Deploy 
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          branch: develop # The branch the action should deploy to.
+          branch: gh-pages # The branch the action should deploy to.不能用develop，会把develop分支覆盖掉
           folder: dist # The folder the action should deploy.
