@@ -2,7 +2,7 @@
   "name": "rrwebtool",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lypynmdl.github.io/github-actions-demo",
+  "homepage": "https://lypynmdl.github.io/rrwebtool/",
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
